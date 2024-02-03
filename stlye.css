@@ -1,0 +1,95 @@
+/* Alap stílusok a mobil eszközökhöz /
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/ Media query a tablet méretű eszközökhöz /
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+
+    section {
+        float: left;
+        width: 70%;
+    }
+
+    aside {
+        float: right;
+        width: 30%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/ Media query a nagy képernyőkhöz */
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    nav {
+        width: 20%;
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        width: 60%;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
