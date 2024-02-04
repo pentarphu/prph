@@ -7,6 +7,40 @@ body {
     background-color: #1B1845;
 }
 
+@keyframes gm-slidein {
+    from {
+        -webkit-transform:translate3d(0,-100%,0);
+        opacity:0;
+        transform:translate3d(0,-100%,0);
+    }
+  
+    to {
+        -webkit-transform:none;
+        opacity:1;
+        transform:none;
+    }
+}
+
+@keyframes ft-slidein {
+    from {
+        -webkit-transform:translate3d(0,100%,0);
+        opacity:0;
+        transform:translate3d(0,100%,0);
+    }
+  
+    to {
+        -webkit-transform:none;
+        opacity:1;
+        transform:none;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
 header {
     padding: 5px;
     background-color: #120F35;
@@ -29,12 +63,30 @@ img{
     
 }
 
+.heropanel__content {
+    -moz-animation:gm-slidein 3s 1;
+    -ms-animation:gm-slidein 3s 1;
+    -o-animation:gm-slidein 3s 1;
+    -webkit-animation:gm-slidein 3s 1;
+    animation:gm-slidein 3s 1;
+    margin:0 auto;
+    max-width:100%;
+    text-align:center;
+}
+
 h1{
     color: #dbdbdb;
     text-align: center;
     font-size: 35px;
     margin: 50px 0 0 0;
     font-family: 'Inter', sans-serif;
+    -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
 }
 
 li a{
@@ -59,6 +111,13 @@ li a{
     background-color: #1B1845;
     font-family: 'Inter', sans-serif;
     cursor: pointer;
+    -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
 }
 
 .button:hover {
@@ -85,7 +144,14 @@ li a{
     padding: 12px 45px;
     background-color: #5865F2;
     font-family: 'Inter', sans-serif;
-    cursor: po;
+    cursor: pointer;
+    -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
 }
   
 .button1:hover {
@@ -104,6 +170,11 @@ li a{
     height: 140px;
     bottom: 0;
     width: 100%;
+    -moz-animation:ft-slidein 3s 1;
+        -ms-animation:ft-slidein 3s 1;
+        -o-animation:ft-slidein 3s 1;
+        -webkit-animation:ft-slidein 3s 1;
+        animation:ft-slidein 3s 1;
 }
 
 .social-icon,
@@ -157,6 +228,39 @@ ul {
         background-color: #1B1845;
     }
 
+    @keyframes gm-slidein {
+        from {
+            -webkit-transform:translate3d(0,-100%,0);
+            opacity:0;
+            transform:translate3d(0,-100%,0);
+        }
+      
+        to {
+            -webkit-transform:none;
+            opacity:1;
+            transform:none;
+        }
+    }
+
+    @keyframes ft-slidein {
+        from {
+            -webkit-transform:translate3d(0,100%,0);
+            opacity:0;
+            transform:translate3d(0,100%,0);
+        }
+      
+        to {
+            -webkit-transform:none;
+            opacity:1;
+            transform:none;
+        }
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
     header {
         padding: 5px;
         background-color: #120F35;
@@ -167,6 +271,17 @@ ul {
         list-style-type: none;
         display: block;
         text-align: center;
+    }
+
+    .heropanel__content {
+        -moz-animation:gm-slidein 3s 1;
+        -ms-animation:gm-slidein 3s 1;
+        -o-animation:gm-slidein 3s 1;
+        -webkit-animation:gm-slidein 3s 1;
+        animation:gm-slidein 3s 1;
+        margin:0 auto;
+        max-width:100%;
+        text-align:center;
     }
 
     img{
@@ -185,6 +300,13 @@ ul {
         font-size: 35px;
         margin: 50px 0 0 0;
         font-family: 'Inter', sans-serif;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
     }
 
     li a{
@@ -209,6 +331,13 @@ ul {
         background-color: #1B1845;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
     }
 
     .button:hover {
@@ -235,7 +364,14 @@ ul {
         padding: 12px 265px;
         background-color: #5865F2;
         font-family: 'Inter', sans-serif;
-        cursor: po;
+        cursor: pointer;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
     }
       
     .button1:hover {
@@ -256,6 +392,11 @@ ul {
         height: 165px;
         bottom: 0;
         width: 100%;
+        -moz-animation:ft-slidein 3s 1;
+        -ms-animation:ft-slidein 3s 1;
+        -o-animation:ft-slidein 3s 1;
+        -webkit-animation:ft-slidein 3s 1;
+        animation:ft-slidein 3s 1;
     }
 
     .social-icon,
@@ -303,6 +444,8 @@ ul {
 /*Media query a nagy képernyőkhöz */
 
 
+
+
 @media (min-width: 1024px) {
     body {
         margin: 0;
@@ -311,13 +454,59 @@ ul {
         background-color: #1B1845;
     }
 
+
     header {
         padding: 5px;
         background-color: #120F35;
         height: 200px;
+        
     }
 
-   
+    @keyframes gm-slidein {
+        from {
+            -webkit-transform:translate3d(0,-100%,0);
+            opacity:0;
+            transform:translate3d(0,-100%,0);
+        }
+      
+        to {
+            -webkit-transform:none;
+            opacity:1;
+            transform:none;
+        }
+    }
+
+    @keyframes ft-slidein {
+        from {
+            -webkit-transform:translate3d(0,100%,0);
+            opacity:0;
+            transform:translate3d(0,100%,0);
+        }
+      
+        to {
+            -webkit-transform:none;
+            opacity:1;
+            transform:none;
+        }
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    .heropanel__content {
+        -moz-animation:gm-slidein 3s 1;
+        -ms-animation:gm-slidein 3s 1;
+        -o-animation:gm-slidein 3s 1;
+        -webkit-animation:gm-slidein 3s 1;
+        animation:gm-slidein 3s 1;
+        margin:0 auto;
+        max-width:100%;
+        text-align:center;
+    }
+    
+    
 
     nav {
         list-style-type: none;
@@ -341,7 +530,19 @@ ul {
         font-size: 60px;
         margin: 100px 0 0 0;
         font-family: 'Inter', sans-serif;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+
+
     }
+
+
+    
    
     
     
@@ -371,12 +572,25 @@ ul {
         background-color: #1B1845;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
     }
+    
       
     .button:hover {
         background-color: #4bc999; /* Green */
         color: #1B1845;
     }
+
+    .disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
 
     .button1 {
         margin-top: 40px;
@@ -393,6 +607,13 @@ ul {
         background-color: #5865F2;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
+        -moz-animation:fadein 5s 2s 1;
+        -ms-animation:fadein 5s 2s 1 ;
+        -o-animation:fadein 5s 2s 1 ;
+        -webkit-animation:fadein 5s 2s 1 ;
+        animation:fadein 5s 1;
+        animation-delay: 3s;
+        animation-fill-mode: both;
     }
       
     .button1:hover {
@@ -413,7 +634,12 @@ ul {
         height: 165px;
         bottom: 0;
         width: 100%;
-      }
+        -moz-animation:ft-slidein 3s 1;
+        -ms-animation:ft-slidein 3s 1;
+        -o-animation:ft-slidein 3s 1;
+        -webkit-animation:ft-slidein 3s 1;
+        animation:ft-slidein 3s 1;
+    }
       
     .social-icon,
     .menu {
@@ -457,10 +683,7 @@ ul {
         margin: 0 30px 0 0;
     }
       
-    .disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-    }
+
 
 
     
