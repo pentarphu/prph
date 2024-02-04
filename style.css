@@ -10,7 +10,7 @@ body {
 header {
     padding: 5px;
     background-color: #120F35;
-    height: 150px;
+    height: 125px;
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
 
 img{
     margin: 15px 0 0 0;
-    width: 120px;
+    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +101,7 @@ li a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 200px;
+    height: 140px;
     bottom: 0;
     width: 100%;
 }
