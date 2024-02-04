@@ -67,7 +67,6 @@ footer {
 /Media query a nagy képernyőkhöz */
 
 
-@media (min-width: 1024px) {
     body {
         margin: 0;
         padding: 0;
@@ -219,9 +218,3 @@ footer {
     ul {
         margin: 0 30px 0 0;
     }
-      
-
-
-
-    
-}
