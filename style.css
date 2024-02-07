@@ -64,11 +64,11 @@ img{
 }
 
 .heropanel__content {
-    -moz-animation:gm-slidein 3s 1;
-    -ms-animation:gm-slidein 3s 1;
-    -o-animation:gm-slidein 3s 1;
-    -webkit-animation:gm-slidein 3s 1;
-    animation:gm-slidein 3s 1;
+    -moz-animation:gm-slidein 1s 1;
+    -ms-animation:gm-slidein 1s 1;
+    -o-animation:gm-slidein 1s 1;
+    -webkit-animation:gm-slidein 1s 1;
+    animation:gm-slidein 1s 1;
     margin:0 auto;
     max-width:100%;
     text-align:center;
@@ -167,11 +167,11 @@ li a{
     height: 140px;
     bottom: 0;
     width: 100%;
-    -moz-animation:ft-slidein 3s 1;
-        -ms-animation:ft-slidein 3s 1;
-        -o-animation:ft-slidein 3s 1;
-        -webkit-animation:ft-slidein 3s 1;
-        animation:ft-slidein 3s 1;
+    -moz-animation:ft-slidein 1s 1;
+        -ms-animation:ft-slidein 1s 1;
+        -o-animation:ft-slidein 1s 1;
+        -webkit-animation:ft-slidein 1s 1;
+        animation:ft-slidein 1s 1;
 }
 
 .social-icon,
@@ -271,7 +271,7 @@ ul {
     }
 
     .heropanel__content {
-    -moz-animation:gm-slidein 1s 1;
+        -moz-animation:gm-slidein 1s 1;
         -ms-animation:gm-slidein 1s 1;
         -o-animation:gm-slidein 1s 1;
         -webkit-animation:gm-slidein 1s 1;
@@ -490,11 +490,11 @@ ul {
     }
     
     .heropanel__content {
-        -moz-animation:gm-slidein 3s 1;
-        -ms-animation:gm-slidein 3s 1;
-        -o-animation:gm-slidein 3s 1;
-        -webkit-animation:gm-slidein 3s 1;
-        animation:gm-slidein 3s 1;
+        -moz-animation:gm-slidein 1s 1;
+        -ms-animation:gm-slidein 1s 1;
+        -o-animation:gm-slidein 1s 1;
+        -webkit-animation:gm-slidein 1s 1;
+        animation:gm-slidein 1s 1;
         margin:0 auto;
         max-width:100%;
         text-align:center;
@@ -524,12 +524,11 @@ ul {
         font-size: 60px;
         margin: 100px 0 0 0;
         font-family: 'Inter', sans-serif;
-        -moz-animation:fadein 5s 2s 1;
-        -ms-animation:fadein 5s 2s 1 ;
-        -o-animation:fadein 5s 2s 1 ;
-        -webkit-animation:fadein 5s 2s 1 ;
-        animation:fadein 5s 1;
-        animation-delay: 3s;
+        -moz-animation:fadein 2s 2s 1;
+        -ms-animation:fadein 2s 2s 1 ;
+        -o-animation:fadein 2s 2s 1 ;
+        -webkit-animation:fadein 2s 2s 1 ;
+        animation:fadein 2s 1;
         animation-fill-mode: both;
 
 
@@ -566,12 +565,11 @@ ul {
         background-color: #1B1845;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
-        -moz-animation:fadein 5s 2s 1;
-        -ms-animation:fadein 5s 2s 1 ;
-        -o-animation:fadein 5s 2s 1 ;
-        -webkit-animation:fadein 5s 2s 1 ;
-        animation:fadein 5s 1;
-        animation-delay: 3s;
+        -moz-animation:fadein 2s 2s 1;
+        -ms-animation:fadein 2s 2s 1 ;
+        -o-animation:fadein 2s 2s 1 ;
+        -webkit-animation:fadein 2s 2s 1 ;
+        animation:fadein 2s 1;
         animation-fill-mode: both;
     }
     
@@ -601,12 +599,11 @@ ul {
         background-color: #5865F2;
         font-family: 'Inter', sans-serif;
         cursor: pointer;
-        -moz-animation:fadein 5s 2s 1;
-        -ms-animation:fadein 5s 2s 1 ;
-        -o-animation:fadein 5s 2s 1 ;
-        -webkit-animation:fadein 5s 2s 1 ;
-        animation:fadein 5s 1;
-        animation-delay: 3s;
+        -moz-animation:fadein 2s 2s 1;
+        -ms-animation:fadein 2s 2s 1 ;
+        -o-animation:fadein 2s 2s 1 ;
+        -webkit-animation:fadein 2s 2s 1 ;
+        animation:fadein 2s 1;
         animation-fill-mode: both;
     }
       
@@ -628,11 +625,11 @@ ul {
         height: 165px;
         bottom: 0;
         width: 100%;
-        -moz-animation:ft-slidein 3s 1;
-        -ms-animation:ft-slidein 3s 1;
-        -o-animation:ft-slidein 3s 1;
-        -webkit-animation:ft-slidein 3s 1;
-        animation:ft-slidein 3s 1;
+        -moz-animation:ft-slidein 1s 1;
+        -ms-animation:ft-slidein 1s 1;
+        -o-animation:ft-slidein 1s 1;
+        -webkit-animation:ft-slidein 1s 1;
+        animation:ft-slidein 1s 1;
     }
       
     .social-icon,
