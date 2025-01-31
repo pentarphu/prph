@@ -107,34 +107,57 @@ a.active:after {
 
 /* 🔹 MOBILE DROPDOWN NAV (Hidden by Default) */
 .mobile-nav {
-    display: none;
-    position: absolute;
-    top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: #071520;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    justify-content: center;
+    transform: translateX(-50%) scaleY(0); /* Start hidden */
+    transform-origin: top;
+    background-color: #051521;
     width: 70%;
-    z-index: 100;
-    height: 50%;
-    border-style: solid;
-    border-radius: 8px;
-    border-color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s;
 }
 
+/* Ensure links are always present */
 .mobile-nav a {
     display: block;
     padding: 10px;
     font-size: 1.7rem;
     color: white;
     text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.2s; /* Delay fade-in */
 }
 
+.mobile-nav.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1); /* Expand smoothly */
+}
 
+/* Fade in links smoothly when menu expands */
+.mobile-nav.active a {
+    opacity: 1;
+}
 
+.container {
+    transition: margin-top 0.4s ease-in-out;
+    z-index: 10;
+}
+
+.container.shifted {
+    margin-top: 30px; /* Moves down when menu opens */
+}
+
+.container{
+    margin-top: -225px;
+}
 
 html, body {
     height: 100%;
@@ -149,7 +172,7 @@ html, body {
     word-spacing: 5px;
     text-decoration: none;
     overflow-x: hidden; /* Prevent horizontal scroll */
-        width: 100%; /* Ensure full width */
+    width: 100%; /* Ensure full width */
 }
 
 .container {
@@ -314,6 +337,127 @@ ul.social-icon li a:hover {
     transform: translateY(-5px);
 }
 
+@media (max-width: 1250px) {
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
+    }
+
+    .heropanel__content {
+        display: flex;
+        justify-content: space-between; /* Spread items apart */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+
+    .header img {
+        width: 140px; /* Adjust size */
+        margin-left: 75%; /* Logo spacing from left */
+    }
+
+    .menu-toggle {
+        margin-left: 100%;
+    }
+
+    /* 🔹 Show Dropdown Menu When Active */
+    .mobile-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+    /* 🔹 Show Hamburger Menu, Hide Regular Navbar */
+    .gomb {
+        display: none;
+    }
+
+    .mama{
+        width: 60%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Content adjustments */
+    .fl {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%; /* The border is now 70% wide */
+        text-align: center;
+    }
+
+    .men {
+        width: 100%;
+    }
+
+    .men h2 {
+        font-size: 1.5rem;
+        white-space: nowrap; /* Prevents line break */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        width: 100%;
+    }
+
+    .men p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .r {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .r img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto 0 -5%; /* Centering the image under the text */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        height: auto;
+        margin: 30px 0 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .fot p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .footers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers ul {
+        flex-direction: row; /* Icons side by side */
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    ul.social-icon li a {
+        font-size: 1.7rem;
+    }
+}
+
+
 
 
 @media (max-width: 1024px) {
@@ -332,11 +476,15 @@ ul.social-icon li a:hover {
 
     .header img {
         width: 140px; /* Adjust size */
-        margin-left: 10px; /* Logo spacing from left */
+        margin-left: 50%; /* Logo spacing from left */
     }
 
     .menu-toggle {
-        margin-right: 10px; /* Space from right */
+        margin-left: 80%;
+    }
+
+    .mama{
+        width: 60%;
     }
 
     /* 🔹 Show Dropdown Menu When Active */
@@ -397,7 +545,7 @@ ul.social-icon li a:hover {
     .r img {
         max-width: 80%;
         display: block;
-        margin: 20px auto 0 auto; /* Középre igazítva a szöveg alatt */
+        margin: 0 auto 0 -5%; /* Középre igazítva a szöveg alatt */
     }
 
     /* Footer módosítások */
@@ -422,12 +570,12 @@ ul.social-icon li a:hover {
     .footers ul {
         flex-direction: row; /* Ikonok egymás mellett */
         justify-content: center;
-        gap: 15px;
+        gap: 20px;
         margin-top: 10px;
     }
 
     ul.social-icon li a {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -451,7 +599,231 @@ ul.social-icon li a:hover {
     }
 
     .menu-toggle {
-        margin-right: 10px; /* Space from right */
+        margin-left: 40%;
+    }
+
+    .mama{
+        width: 60%;
+    }
+
+    /* 🔹 Show Dropdown Menu When Active */
+    .mobile-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Tartalom módosítások mobilra */
+    .content-wrap .e h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrap .e p {
+        font-size: 1rem;
+    }
+
+    .gta {
+        width: 70%; /* Mobilon is 70% széles marad */
+    }
+
+    .men h2 {
+        font-size: 1.3rem;
+        white-space: nowrap; /* Nem törik meg a cím */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .men p {
+        font-size: 14px;
+    }
+
+    .r img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 0 -15%; /* Középre igazítva */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gta {
+        padding: 10px;
+    }
+
+    /* Footer további módosítások mobilra */
+    .footer {
+        margin: 20px 0 5px 0;
+        padding: 5px;
+    }
+
+    .footers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers ul {
+        flex-direction: row; /* Mobilon is egymás mellett maradnak az ikonok */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul.social-icon li a {
+        font-size: 1.7rem;
+    }
+
+    .content-wrap .e h1{
+        color: #dbdbdb;
+        font-size: 25px;
+        margin: 0 0 0 0;
+        animation-fill-mode: both;
+        margin: 0 5px 0 5px;
+    }
+    
+    .content-wrap .e p{
+        color: grey;
+        font-size: 15px;
+        margin: 0 0 0 0;
+        font-weight: 300;
+        margin: 0 5px 0 5px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
+    }
+    /* Header további módosítások mobilra */
+    .heropanel__content {
+        display: flex;
+        justify-content: space-between; /* Spread items apart */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header img {
+        width: 100px; /* Adjust size */
+        margin-left: 10%; /* Logo spacing from left */
+        height: auto;
+    }
+
+    .menu-toggle {
+        margin-left: 20%;
+    }
+
+    .mama{
+        width: 60%;
+    }
+
+    /* 🔹 Show Dropdown Menu When Active */
+    .mobile-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Tartalom módosítások mobilra */
+    .content-wrap .e h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrap .e p {
+        font-size: 1rem;
+    }
+
+    .gta {
+        width: 70%; /* Mobilon is 70% széles marad */
+    }
+
+    .men h2 {
+        font-size: 1.3rem;
+        white-space: nowrap; /* Nem törik meg a cím */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .men p {
+        font-size: 14px;
+    }
+
+    .r img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 0 -15%; /* Középre igazítva */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gta {
+        padding: 10px;
+    }
+
+    /* Footer további módosítások mobilra */
+    .footer {
+        margin: 20px 0 5px 0;
+        padding: 5px;
+    }
+
+    .footers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers ul {
+        flex-direction: row; /* Mobilon is egymás mellett maradnak az ikonok */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul.social-icon li a {
+        font-size: 1.7rem;
+    }
+
+    .content-wrap .e h1{
+        color: #dbdbdb;
+        font-size: 25px;
+        margin: 0 0 0 0;
+        animation-fill-mode: both;
+        margin: 0 5px 0 5px;
+    }
+    
+    .content-wrap .e p{
+        color: grey;
+        font-size: 15px;
+        margin: 0 0 0 0;
+        font-weight: 300;
+        margin: 0 5px 0 5px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
+    }
+    /* Header további módosítások mobilra */
+    .heropanel__content {
+        display: flex;
+        justify-content: space-between; /* Spread items apart */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header img {
+        width: 100px; /* Adjust size */
+        margin-left: 0; /* Logo spacing from left */
+        height: auto;
+    }
+
+    .menu-toggle {
+        margin-left: 0;
+    }
+
+    .mama{
+        width: 60%;
     }
 
     /* 🔹 Show Dropdown Menu When Active */
