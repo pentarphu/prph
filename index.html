@@ -12,11 +12,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     </style>
 </head>
-<header class="heropanel__content" >
+<!-- 🔹 HEADER (Unchanged for PC) -->
+<header class="heropanel__content">
     <div class="mama">
         <div class="header">
-            <img src="szoveglogo.png" alt="">
+            <img src="szoveglogo.png" alt="Logo">
         </div>
+
+        <!-- 🔹 REGULAR NAVIGATION (Visible on PC) -->
         <div class="gomb">
             <a href="index.html" class="active">
                 <i class="fa-solid fa-house"></i> Home
@@ -31,8 +34,21 @@
                 <i class="fa-brands fa-discord"></i> Discord
             </a>
         </div>
+
+        <!-- 🔹 HAMBURGER MENU (Only for Mobile & Tablets) -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>  
 </header>
+
+<!-- 🔹 MOBILE DROPDOWN NAV (Hidden by Default) -->
+<nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="https://pentarp.tebex.io" target="_blank">Store</a>
+    <a href="https://docs.pentarp.hu" target="_blank">Docs</a>
+    <a href="https://discord.gg/pentarp" target="_blank">Discord</a>
+</nav>
 
 <body>
 <div class="container">
@@ -131,6 +147,24 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const mobileNav = document.getElementById("mobileNav");
+    
+            menuToggle.addEventListener("click", function () {
+                mobileNav.classList.toggle("active");
+            });
+    
+            // Close menu when clicking outside
+            document.addEventListener("click", function (event) {
+                if (!menuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
+                    mobileNav.classList.remove("active");
+                }
+            });
+        });
+    </script>
 
     
     <style type="text/css">
