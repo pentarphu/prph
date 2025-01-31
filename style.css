@@ -176,6 +176,9 @@ html, body {
 
 .fl{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 
@@ -191,11 +194,14 @@ html, body {
 }
 
 .r img{
-    justify-content: center; 
-    align-items: center;
-    margin-top: -55px; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
+    margin-top: -55px; 
 }
+
 
 .j {
     text-align: center;
