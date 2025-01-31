@@ -97,6 +97,44 @@ a.active:after {
   left: 15%; 
 }
 
+/* 🔹 HAMBURGER MENU (Only for Mobile & Tablets) */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* 🔹 MOBILE DROPDOWN NAV (Hidden by Default) */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #071520;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    z-index: 100;
+    height: 50%;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 10px;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 
 html, body {
     height: 100%;
@@ -275,12 +313,213 @@ ul.social-icon li a:hover {
 }
 
 
-   
 
+@media (max-width: 1024px) {
 
+    .heropanel__content {
+        display: flex;
+        justify-content: space-between; /* Spread items apart */
+        align-items: center;
+        padding: 10px 20px;
+    }
 
+    .header img {
+        width: 140px; /* Adjust size */
+        margin-left: 10px; /* Logo spacing from left */
+    }
 
+    .menu-toggle {
+        margin-right: 10px; /* Space from right */
+    }
 
+    /* 🔹 Show Dropdown Menu When Active */
+    .mobile-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+    /* 🔹 Show Hamburger Menu, Hide Regular Navbar */
+    .gomb {
+        display: none;
+    }
 
+    .menu-toggle {
+        display: block;
+    }
 
+    /* Tartalom módosítások */
+    .fl {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .gta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%; /* A border most 70% széles */
+        text-align: center;
+    }
+
+    .men {
+        width: 100%;
+    }
+
+    .men h2 {
+        font-size: 1.5rem;
+        white-space: nowrap; /* Nem törik meg a cím */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        width: 100%;
+    }
+
+    .men p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .r {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .r img {
+        max-width: 80%;
+        display: block;
+        margin: 20px auto 0 auto; /* Középre igazítva a szöveg alatt */
+    }
+
+    /* Footer módosítások */
+    .footer {
+        height: auto;
+        margin: 30px 0 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .fot p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .footers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers ul {
+        flex-direction: row; /* Ikonok egymás mellett */
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    ul.social-icon li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header további módosítások mobilra */
+    .heropanel__content {
+        display: flex;
+        justify-content: space-between; /* Spread items apart */
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header img {
+        width: 140px; /* Adjust size */
+        margin-left: 10px; /* Logo spacing from left */
+    }
+
+    .menu-toggle {
+        margin-right: 10px; /* Space from right */
+    }
+
+    /* 🔹 Show Dropdown Menu When Active */
+    .mobile-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Tartalom módosítások mobilra */
+    .content-wrap .e h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrap .e p {
+        font-size: 1rem;
+    }
+
+    .gta {
+        width: 70%; /* Mobilon is 70% széles marad */
+    }
+
+    .men h2 {
+        font-size: 1.3rem;
+        white-space: nowrap; /* Nem törik meg a cím */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .men p {
+        font-size: 14px;
+    }
+
+    .r img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 0 -15%; /* Középre igazítva */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gta {
+        padding: 10px;
+    }
+
+    /* Footer további módosítások mobilra */
+    .footer {
+        margin: 20px 0 5px 0;
+        padding: 5px;
+    }
+
+    .footers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footers ul {
+        flex-direction: row; /* Mobilon is egymás mellett maradnak az ikonok */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul.social-icon li a {
+        font-size: 1.7rem;
+    }
+
+    .content-wrap .e h1{
+        color: #dbdbdb;
+        font-size: 25px;
+        margin: 0 0 0 0;
+        animation-fill-mode: both;
+        margin: 0 5px 0 5px;
+    }
+    
+    .content-wrap .e p{
+        color: grey;
+        font-size: 15px;
+        margin: 0 0 0 0;
+        font-weight: 300;
+        margin: 0 5px 0 5px;
+    }
+    
+}
