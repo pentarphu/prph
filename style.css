@@ -148,6 +148,8 @@ html, body {
     font-style: normal;
     word-spacing: 5px;
     text-decoration: none;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
 }
 
 .container {
@@ -316,6 +318,11 @@ ul.social-icon li a:hover {
 
 @media (max-width: 1024px) {
 
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
+    }
+
     .heropanel__content {
         display: flex;
         justify-content: space-between; /* Spread items apart */
@@ -425,6 +432,11 @@ ul.social-icon li a:hover {
 }
 
 @media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        width: 100%; /* Ensure full width */
+    }
     /* Header további módosítások mobilra */
     .heropanel__content {
         display: flex;
