@@ -12,14 +12,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     </style>
 </head>
-<!-- 🔹 HEADER (Unchanged for PC) -->
+
 <header class="heropanel__content">
     <div class="mama">
         <div class="header">
             <img src="szoveglogo.png" alt="Logo">
         </div>
 
-        <!-- 🔹 REGULAR NAVIGATION (Visible on PC) -->
+       
         <div class="gomb">
             <a href="index.html" class="active">
                 <i class="fa-solid fa-house"></i> Home
@@ -35,14 +35,14 @@
             </a>
         </div>
 
-        <!-- 🔹 HAMBURGER MENU (Only for Mobile & Tablets) -->
+       
         <div class="menu-toggle" id="menuToggle">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>  
 </header>
 
-<!-- 🔹 MOBILE DROPDOWN NAV (Hidden by Default) -->
+
 <nav class="mobile-nav" id="mobileNav">
     <a href="index.html">Home</a>
     <a href="https://pentarp.tebex.io" target="_blank">Store</a>
@@ -149,21 +149,54 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.getElementById("menuToggle");
-            const mobileNav = document.getElementById("mobileNav");
+     document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+    const container = document.querySelector(".container");
+
+    menuToggle.addEventListener("click", function () {
+        if (mobileNav.classList.contains("active")) {
+            // Smooth close effect
+            mobileNav.style.opacity = "0";
+            mobileNav.style.transform = "translateX(-50%) scaleY(0)";
+            container.classList.remove("shifted");
+
+            setTimeout(() => {
+                mobileNav.classList.remove("active");
+                mobileNav.style.visibility = "hidden";
+            }, 400); // Matches transition duration
+        } else {
+            // Smooth open effect
+            mobileNav.classList.add("active");
+            mobileNav.style.visibility = "visible";
+            mobileNav.style.opacity = "1";
+            mobileNav.style.transform = "translateX(-50%) scaleY(1)";
+            container.classList.add("shifted");
+        }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
+            mobileNav.style.opacity = "0";
+            mobileNav.style.transform = "translateX(-50%) scaleY(0)";
+            container.classList.remove("shifted");
+
+            setTimeout(() => {
+                mobileNav.classList.remove("active");
+                mobileNav.style.visibility = "hidden";
+            }, 400);
+        }
+    });
+});
+
+
+
+
+
+
     
-            menuToggle.addEventListener("click", function () {
-                mobileNav.classList.toggle("active");
-            });
-    
-            // Close menu when clicking outside
-            document.addEventListener("click", function (event) {
-                if (!menuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
-                    mobileNav.classList.remove("active");
-                }
-            });
-        });
+
     </script>
 
     
