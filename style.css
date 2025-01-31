@@ -352,9 +352,37 @@ ul.social-icon li a:hover {
     }
 
 
+    header.heropanel__content img {
+        width: 120px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        height: auto; 
+    }
+
+    .nigger{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nigger .menu-toggle{
+        margin-left: 175%;
+    }
+
+    .mama{
+        width: 80%;
+    }
+
+    .content-wrap  .kur img{
+        height: auto;
+        width: 120px;
+    }
+
     .header img {
         width: 140px; /* Adjust size */
-        margin-left: 75%; /* Logo spacing from left */
+        margin-left: 20%; /* Logo spacing from left */
     }
 
     .menu-toggle {
@@ -397,7 +425,7 @@ ul.social-icon li a:hover {
     }
 
     .men {
-        width: 100%;
+        margin: 20px 20px 20px 20px;
     }
 
     .men h2 {
@@ -412,6 +440,9 @@ ul.social-icon li a:hover {
     .men p {
         width: 100%;
         font-size: 16px;
+        text-align: left;
+        justify-content: center;
+        margin: 0 10px 0 0;
     }
 
     .r {
@@ -476,16 +507,37 @@ ul.social-icon li a:hover {
 
     .header img {
         width: 140px; /* Adjust size */
-        margin-left: 50%; /* Logo spacing from left */
+        margin-left: 20%; /* Logo spacing from left */
     }
 
-    .menu-toggle {
-        margin-left: 80%;
+    header.heropanel__content img {
+        width: 120px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        height: auto; 
+    }
+
+    .nigger{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nigger .menu-toggle{
+        margin-left: 120%;
     }
 
     .mama{
-        width: 60%;
+        width: 80%;
     }
+
+    .content-wrap  .kur img{
+        height: auto;
+        width: 120px;
+    }
+
 
     /* 🔹 Show Dropdown Menu When Active */
     .mobile-nav.active {
@@ -518,9 +570,6 @@ ul.social-icon li a:hover {
         text-align: center;
     }
 
-    .men {
-        width: 100%;
-    }
 
     .men h2 {
         font-size: 1.5rem;
@@ -534,6 +583,9 @@ ul.social-icon li a:hover {
     .men p {
         width: 100%;
         font-size: 16px;
+        text-align: left;
+        justify-content: center;
+        margin: 0 10px 0 0;
     }
 
     .r {
@@ -577,6 +629,9 @@ ul.social-icon li a:hover {
     ul.social-icon li a {
         font-size: 1.7rem;
     }
+    .men {
+        margin: 20px 20px 20px 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -602,6 +657,34 @@ ul.social-icon li a:hover {
         margin-left: 40%;
     }
 
+    header.heropanel__content img {
+        width: 120px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        height: auto; 
+    }
+
+    .nigger{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nigger .menu-toggle{
+        margin-left: 175%;
+    }
+
+    .mama{
+        width: 80%;
+    }
+
+    .content-wrap  .kur img{
+        height: auto;
+        width: 120px;
+    }
+
     .mama{
         width: 60%;
     }
@@ -634,6 +717,10 @@ ul.social-icon li a:hover {
 
     .men p {
         font-size: 14px;
+        text-align: left;
+        justify-content: center;
+        margin: 0 10px 0 0;
+
     }
 
     .r img {
@@ -684,6 +771,9 @@ ul.social-icon li a:hover {
         margin: 0 0 0 0;
         font-weight: 300;
         margin: 0 5px 0 5px;
+    }
+    .men {
+        margin: 20px 20px 20px 20px;
     }
     
 }
@@ -707,15 +797,35 @@ ul.social-icon li a:hover {
         margin-left: 10%; /* Logo spacing from left */
         height: auto;
     }
+    
 
-    .menu-toggle {
-        margin-left: 20%;
+    header.heropanel__content img {
+        width: 120px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        height: auto; 
+    }
+
+    .nigger{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nigger .menu-toggle{
+        margin-left: 100%;
     }
 
     .mama{
-        width: 60%;
+        width: 80%;
     }
 
+    .content-wrap  .kur img{
+        height: auto;
+        width: 120px;
+    }
     /* 🔹 Show Dropdown Menu When Active */
     .mobile-nav.active {
         display: flex;
@@ -735,6 +845,11 @@ ul.social-icon li a:hover {
         width: 70%; /* Mobilon is 70% széles marad */
     }
 
+    .men {
+        margin: 20px 20px 20px 20px;
+    }
+
+
     .men h2 {
         font-size: 1.3rem;
         white-space: nowrap; /* Nem törik meg a cím */
@@ -744,6 +859,9 @@ ul.social-icon li a:hover {
 
     .men p {
         font-size: 14px;
+        text-align: left;
+        justify-content: center;
+        
     }
 
     .r img {
@@ -795,6 +913,7 @@ ul.social-icon li a:hover {
         font-weight: 300;
         margin: 0 5px 0 5px;
     }
+    
     
 }
 
@@ -818,12 +937,33 @@ ul.social-icon li a:hover {
         height: auto;
     }
 
-    .menu-toggle {
-        margin-left: 0;
+
+    header.heropanel__content img {
+        width: 120px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        height: auto; 
+    }
+
+    .nigger{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nigger .menu-toggle{
+        margin-left: 100%;
     }
 
     .mama{
-        width: 60%;
+        width: 80%;
+    }
+
+    .content-wrap .kur img{
+        height: auto;
+        width: 120px;
     }
 
     /* 🔹 Show Dropdown Menu When Active */
@@ -854,6 +994,9 @@ ul.social-icon li a:hover {
 
     .men p {
         font-size: 14px;
+        text-align: left;
+        justify-content: center;
+        margin-left: 2%;
     }
 
     .r img {
@@ -862,6 +1005,8 @@ ul.social-icon li a:hover {
         margin: 0 auto 0 -15%; /* Középre igazítva */
         text-align: center;
         justify-content: center;
+        height: auto;
+        width: 400px;
     }
 
     .gta {
@@ -905,5 +1050,10 @@ ul.social-icon li a:hover {
         font-weight: 300;
         margin: 0 5px 0 5px;
     }
+
+    .men {
+        margin: 20px 20px 20px 20px;
+    }
+
     
 }
