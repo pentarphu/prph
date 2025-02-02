@@ -454,7 +454,7 @@ ul.social-icon li a:hover {
     .r img {
         max-width: 80%;
         display: block;
-        margin: 0 auto 0 -5%; /* Centering the image under the text */
+        margin: 0 auto 0 -6%; /* Centering the image under the text */
     }
 
     /* Footer adjustments */
@@ -597,8 +597,10 @@ ul.social-icon li a:hover {
     .r img {
         max-width: 80%;
         display: block;
-        margin: 0 auto 0 -5%; /* Középre igazítva a szöveg alatt */
+        margin: 0 auto 0 -7%; /* Középre igazítva a szöveg alatt */
     }
+
+    
 
     /* Footer módosítások */
     .footer {
@@ -673,7 +675,7 @@ ul.social-icon li a:hover {
     }
 
     .nigger .menu-toggle{
-        margin-left: 175%;
+        margin-left: 120%;
     }
 
     .mama{
@@ -685,9 +687,6 @@ ul.social-icon li a:hover {
         width: 120px;
     }
 
-    .mama{
-        width: 60%;
-    }
 
     /* 🔹 Show Dropdown Menu When Active */
     .mobile-nav.active {
@@ -716,6 +715,7 @@ ul.social-icon li a:hover {
     }
 
     .men p {
+        width: 100%;
         font-size: 14px;
         text-align: left;
         justify-content: center;
@@ -726,7 +726,7 @@ ul.social-icon li a:hover {
     .r img {
         max-width: 100%;
         display: block;
-        margin: 0 auto 0 -15%; /* Középre igazítva */
+        margin: 0 auto 0 -19%; /* Középre igazítva */
         text-align: center;
         justify-content: center;
     }
@@ -793,11 +793,13 @@ ul.social-icon li a:hover {
     }
 
     .header img {
-        width: 100px; /* Adjust size */
-        margin-left: 10%; /* Logo spacing from left */
-        height: auto;
+        width: 140px; /* Adjust size */
+        margin-left: 10px; /* Logo spacing from left */
     }
-    
+
+    .menu-toggle {
+        margin-left: 40%;
+    }
 
     header.heropanel__content img {
         width: 120px;
@@ -815,7 +817,7 @@ ul.social-icon li a:hover {
     }
 
     .nigger .menu-toggle{
-        margin-left: 100%;
+        margin-left: 117%;
     }
 
     .mama{
@@ -826,6 +828,8 @@ ul.social-icon li a:hover {
         height: auto;
         width: 120px;
     }
+
+
     /* 🔹 Show Dropdown Menu When Active */
     .mobile-nav.active {
         display: flex;
@@ -845,11 +849,6 @@ ul.social-icon li a:hover {
         width: 70%; /* Mobilon is 70% széles marad */
     }
 
-    .men {
-        margin: 20px 20px 20px 20px;
-    }
-
-
     .men h2 {
         font-size: 1.3rem;
         white-space: nowrap; /* Nem törik meg a cím */
@@ -857,17 +856,24 @@ ul.social-icon li a:hover {
         text-overflow: ellipsis;
     }
 
+    .men {
+        margin: 15px; /* Tovább csökkentett margin kisebb képernyőkre */
+    }
+    
+    .gta {
+        width: 80%; /* Még nagyobb szélesség, hogy ne szoruljon össze */
+        margin: 0 auto; /* Középre igazítás */
+    }
+    
     .men p {
-        font-size: 14px;
-        text-align: left;
-        justify-content: center;
-        
+        font-size: 10px; /* Kisebb betűméret a jobb olvashatóságért */
+        width: 100%;
     }
 
     .r img {
         max-width: 100%;
         display: block;
-        margin: 0 auto 0 -15%; /* Középre igazítva */
+        margin: 0 auto 0 -19%; /* Középre igazítva */
         text-align: center;
         justify-content: center;
     }
@@ -912,6 +918,9 @@ ul.social-icon li a:hover {
         margin: 0 0 0 0;
         font-weight: 300;
         margin: 0 5px 0 5px;
+    }
+    .men {
+        margin: 20px 20px 20px 20px;
     }
     
     
@@ -932,11 +941,13 @@ ul.social-icon li a:hover {
     }
 
     .header img {
-        width: 100px; /* Adjust size */
-        margin-left: 0; /* Logo spacing from left */
-        height: auto;
+        width: 140px; /* Adjust size */
+        margin-left: 10px; /* Logo spacing from left */
     }
 
+    .menu-toggle {
+        margin-left: 40%;
+    }
 
     header.heropanel__content img {
         width: 120px;
@@ -954,17 +965,18 @@ ul.social-icon li a:hover {
     }
 
     .nigger .menu-toggle{
-        margin-left: 100%;
+        margin-left: 115%;
     }
 
     .mama{
         width: 80%;
     }
 
-    .content-wrap .kur img{
+    .content-wrap  .kur img{
         height: auto;
         width: 120px;
     }
+
 
     /* 🔹 Show Dropdown Menu When Active */
     .mobile-nav.active {
@@ -981,32 +993,34 @@ ul.social-icon li a:hover {
         font-size: 1rem;
     }
 
-    .gta {
-        width: 70%; /* Mobilon is 70% széles marad */
-    }
 
     .men h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         white-space: nowrap; /* Nem törik meg a cím */
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
+    .men {
+        margin: 15px; /* Tovább csökkentett margin kisebb képernyőkre */
+    }
+    
+    .gta {
+        width: 80%; /* Még nagyobb szélesség, hogy ne szoruljon össze */
+        margin: 0 auto; /* Középre igazítás */
+    }
+    
     .men p {
-        font-size: 14px;
-        text-align: left;
-        justify-content: center;
-        margin-left: 2%;
+        font-size: 10px; /* Kisebb betűméret a jobb olvashatóságért */
+        width: 100%;
     }
 
     .r img {
         max-width: 100%;
         display: block;
-        margin: 0 auto 0 -15%; /* Középre igazítva */
+        margin: 0 auto 0 -19%; /* Középre igazítva */
         text-align: center;
         justify-content: center;
-        height: auto;
-        width: 400px;
     }
 
     .gta {
@@ -1050,7 +1064,6 @@ ul.social-icon li a:hover {
         font-weight: 300;
         margin: 0 5px 0 5px;
     }
-
     .men {
         margin: 20px 20px 20px 20px;
     }
