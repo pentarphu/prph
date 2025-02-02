@@ -460,6 +460,7 @@ ul.social-icon li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -3%;
     }
 
     .footers ul {
@@ -599,6 +600,7 @@ ul.social-icon li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -4%;
     }
 
     .footers ul {
@@ -721,6 +723,7 @@ ul.social-icon li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -6%;
     }
 
     .footers ul {
@@ -863,6 +866,7 @@ ul.social-icon li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -10%;
     }
 
     .footers ul {
@@ -1004,6 +1008,7 @@ ul.social-icon li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -12%;
     }
 
     .footers ul {
