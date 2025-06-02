@@ -45,7 +45,7 @@ scrollToSection(0);
 
 async function updateServerStats(){
   try {
-    const res = await fetch('http://213.181.206.239:30120/players.json');
+    const res = await fetch('https://213.181.206.239:30120/players.json');
     if (!res.ok) throw new Error(`Hiba: ${res.status}`);
     const players = await res.json();
     const online = players.length;
