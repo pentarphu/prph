@@ -207,7 +207,7 @@ header .nav-links:hover {
 
 header .join-button {
     background: #58bba4;;
-    color: transparent;
+    color: white;
     border: 1px solid #58bba400;
     border-radius: 5px;
     padding: 10px 20px;
@@ -475,7 +475,7 @@ header .join-button:hover {
 }
 .down {
     background: #58bba4;;
-    color: transparent;
+    color: white;
     border: 1px solid #58bba400;
     border-radius: 5px;
     padding: 13px 80px;
